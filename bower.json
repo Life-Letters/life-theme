@@ -1,22 +1,12 @@
 {
-  "name": "web-common",
+  "name": "theme",
   "homepage": "https://github.com/Life-Letters/theme",
   "authors": [
     "Torben Sko <torben.sko@lifeletters.com.au>"
   ],
-  "description": "Common Life Letters web logic, layout, styling and assets",
+  "description": "Life Letters theme",
   "main": [
-    "scss/include.scss",
-    "scripts/module.js",
-    "scripts/directives/site-nav.js",
-    "scripts/directives/footer.js",
-    "scripts/directives/mailing-list-form.js",
-    "scripts/directives/toggleable.js",
-    "scripts/directives/store-as-date.js",
-    "scripts/directives/edit-cookie.js",
-    "scripts/directives/lazy-load.js",
-    "scripts/directives/of-legal-age.js",
-    "scripts/filters/age.js"
+    "scss/include.scss"
   ],
   "moduleType": [],
   "license": "MIT",
@@ -28,19 +18,15 @@
     "tests"
   ],
   "devDependencies": {
-    "angular-inspect-html": "Life-Letters/angular-inspect-html#~1.1.1"
+    "angular-inspect-html": "Life-Letters/angular-inspect-html#~1.1.1",
+    "angular-bootstrap": "^1.3.2"
   },
   "dependencies": {
     "bootswatch": "~3.3.6",
     "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
-    "font-awesome": "~4.5.0",
-    "angular-bootstrap": "~1.1.2",
-    "angular-users": "Life-Letters/angular-users#~0.6.1",
-    "angular-moment": "^0.10.3"
+    "font-awesome": "~4.5.0"
   },
   "resolutions": {
-    "ng-lodash": "~0.4.0",
-    "angular-bootstrap": "~1.1.2",
-    "moment": ">=2.8.0 <2.11.0"
+    "angular-bootstrap": "^1.3.2"
   }
 }

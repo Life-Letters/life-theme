@@ -1,16 +1,21 @@
-# Common Life Letters elements
+# Life Letters Theme
 
-This repo includes the Life Letters theme and other common Life Letter components,
-including:
+The Life Letters theme including:
 
 - modified bootstrap theme
 - fonts
-- mixins
+- SASS mixins
 - an example file
+
+
 
 ## Usage
 
-Include the `_include.scss` file in your project. 
+Install via bower
+
+    bower install Life-Letters/theme --save
+
+To manually install, add `_include.scss` to your sass file.
 
 If you are using a Grunt build, add the following to the copy
 task to handle the font files:
@@ -40,7 +45,7 @@ is included via the `importPath`:
           ...
 
 If you are using `wiredep` in your Grunt file, you should exclude your bootstrap sass files as
-these are already imported via the web-common (they're imported in a specific order, so it's
+these are already imported via the module (they're imported in a specific order, so it's
 easier to leave it to web-common). To exclude them, add the
 following:
 
@@ -48,40 +53,12 @@ following:
       ...
       sass: {
         ...
-        exclude: ['bootstrap-sass'],
+        exclude: [
+          'bootstrap-sass',
+          'font-awesome'
+        ],
       }
     },
-
-To make the templates available you can manually copy the `views` folder to 
-your project directory. Alternatively, if you're using grunt you can follow these steps:
-
-Add the following to the `copy` task:
-
-    copy: {
-      dist: {
-        files: [{
-          ...
-        },{
-          expand: true,
-          cwd: './bower_components/web-common/views',
-          src: '{,*/}*.html',
-          dest: '<%= yeoman.dist %>/views'
-        }
-
-Add the following to the `livereload` server:
-
-    livereload: {
-      options: {
-        open: true,
-        middleware: function (connect) {
-          return [
-            ...
-            connect.static('./bower_components/web-common')
-          ];
-        }
-      }
-    },
-
 
 ## Development
 
@@ -97,11 +74,4 @@ Build the CSS
 Run server
 
     node server.js
-
-Using local versions of bower modules:
-
-    cd {...}/angular-users
-    bower link
-    cd {...}/web-common
-    bower link angular-users
 
