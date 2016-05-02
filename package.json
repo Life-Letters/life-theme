@@ -1,12 +1,22 @@
 {
-  "name": "web-common",
+  "name": "life-theme",
+  "version": "0.0.4",
+  "dist": "./dist",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "morgan": "^1.6.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1"
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/theme.css",
+  "style": "dist/theme.css"
 }

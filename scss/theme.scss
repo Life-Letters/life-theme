@@ -1,0 +1,22 @@
+/*TODO: The dist build this is used for includes the Glyphicons Halflings refs from bower_componenets, it's
+not needed now in apps that consume the dist files so not urgent to fix now but need to clean this up later*/
+
+$theme-font-path: "fonts/";
+
+// Needed before the bootswatch import. This gets imported again, but that's fine
+@import "bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+@import "variables";
+@import "bootswatch/cosmo/variables";
+
+@import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bootswatch/cosmo/bootswatch";
+
+@import "fonts-icons-dist"; // need a modified fonts/icons file so paths in dist works well
+@import "defaults";
+@import "bootstrap-tweaks";
+@import "themes";
+@import "nav-site";
+@import "footer";
+@import "modifiers";
+@import "sections";
