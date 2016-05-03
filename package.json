@@ -1,6 +1,6 @@
 {
   "name": "life-theme",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "dist": "./dist",
   "dependencies": {
     "cors": "^2.7.1",
@@ -15,7 +15,7 @@
     "grunt-contrib-watch": "^0.6.1"
   },
   "files": [
-    "dist"
+    "dist", "scss", "fonts"
   ],
   "main": "dist/theme.css",
   "style": "dist/theme.css"

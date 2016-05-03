@@ -9012,42 +9012,37 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   color: #333333;
 }
 
-/* The Compass default path resolves paths from the root directory, so it does not work in the dist build and distribution
-TODO: See if we can work out a way to reuse the existing fonts and icons SASS files so we can stick to DRY coding
-*/
-/* fonts */
 @font-face {
   font-family: 'serifabt';
-  src: url("fonts/serifabt.eot");
-  src: url("fonts/serifabt.eot?#iefix") format("embedded-opentype"), url("fonts/serifabt.woff") format("woff"), url("fonts/serifabt.ttf") format("truetype"), url("fonts/serifabt.svg#serifabt") format("svg");
+  src: url('/fonts/fonts/serifabt.eot');
+  src: url('/fonts/fonts/serifabt.eot?#iefix') format("embedded-opentype"), url('/fonts/fonts/serifabt.woff') format("woff"), url('/fonts/fonts/serifabt.ttf') format("truetype"), url('/fonts/fonts/serifabt.svg#serifabt') format("svg");
   font-weight: normal;
   font-style: normal;
 }
-/* line 22, ../scss/_fonts-icons-dist.scss */
+/* line 17, ../scss/_fonts.scss */
 .nav-desktop .nav-brand, .nav-mobile .nav-brand, .footer .foot_logo {
   font-family: "serifabt", Georgia, "Times New Roman", Times, serif;
   letter-spacing: -0.01em;
 }
-/* line 25, ../scss/_fonts-icons-dist.scss */
+/* line 20, ../scss/_fonts.scss */
 .nav-desktop .nav-brand i, .nav-mobile .nav-brand i, .footer .foot_logo i {
   font-size: 1.2em;
   position: relative;
   top: 0.2em;
 }
-/* line 30, ../scss/_fonts-icons-dist.scss */
+/* line 25, ../scss/_fonts.scss */
 .nav-desktop .nav-brand span:last-child, .nav-mobile .nav-brand span:last-child, .footer .foot_logo span:last-child {
   padding-left: 0.1em;
 }
 
-/* icons */
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?-nslsii");
-  src: url("fonts/icomoon.eot?#iefix-nslsii") format("embedded-opentype"), url("fonts/icomoon.woff2?-nslsii") format("woff2"), url("fonts/icomoon.ttf?-nslsii") format("truetype"), url("fonts/icomoon.woff?-nslsii") format("woff"), url("fonts/icomoon.svg?-nslsii#icomoon") format("svg");
+  src: url('/fonts/fonts/icomoon.eot?-nslsii');
+  src: url('/fonts/fonts/icomoon.eot?#iefix-nslsii') format("embedded-opentype"), url('/fonts/fonts/icomoon.woff2?-nslsii') format("woff2"), url('/fonts/fonts/icomoon.ttf?-nslsii') format("truetype"), url('/fonts/fonts/icomoon.woff?-nslsii') format("woff"), url('/fonts/fonts/icomoon.svg?-nslsii#icomoon') format("svg");
   font-weight: normal;
   font-style: normal;
 }
-/* line 54, ../scss/_fonts-icons-dist.scss */
+/* line 19, ../scss/_icons.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -9061,579 +9056,595 @@ TODO: See if we can work out a way to reuse the existing fonts and icons SASS fi
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 68, ../scss/_fonts-icons-dist.scss */
+/* line 33, ../scss/_icons.scss */
 .icon-hex-print-outline:before {
   content: "\e665";
 }
 
-/* line 71, ../scss/_fonts-icons-dist.scss */
+/* line 36, ../scss/_icons.scss */
 .icon-hex-print-solid .path1:before {
   content: "\e666";
   color: black;
 }
 
-/* line 75, ../scss/_fonts-icons-dist.scss */
+/* line 40, ../scss/_icons.scss */
 .icon-hex-print-solid .path2:before {
   content: "\e667";
   margin-left: -0.8564453125em;
   color: white;
 }
 
-/* line 80, ../scss/_fonts-icons-dist.scss */
+/* line 45, ../scss/_icons.scss */
 .icon-hex-question-outline:before {
   content: "\e662";
 }
 
-/* line 83, ../scss/_fonts-icons-dist.scss */
+/* line 48, ../scss/_icons.scss */
 .icon-hex-question-solid:before {
   content: "\e663";
 }
 
-/* line 86, ../scss/_fonts-icons-dist.scss */
+/* line 51, ../scss/_icons.scss */
 .icon-dots:before {
   content: "\e600";
 }
 
-/* line 89, ../scss/_fonts-icons-dist.scss */
+/* line 54, ../scss/_icons.scss */
 .icon-hex-00-outline:before {
   content: "\e601";
 }
 
-/* line 92, ../scss/_fonts-icons-dist.scss */
+/* line 57, ../scss/_icons.scss */
 .icon-hex-00-solid:before {
   content: "\e602";
 }
 
-/* line 95, ../scss/_fonts-icons-dist.scss */
+/* line 60, ../scss/_icons.scss */
 .icon-hex-01-outline:before {
   content: "\e603";
 }
 
-/* line 98, ../scss/_fonts-icons-dist.scss */
+/* line 63, ../scss/_icons.scss */
 .icon-hex-01-solid:before {
   content: "\e604";
 }
 
-/* line 101, ../scss/_fonts-icons-dist.scss */
+/* line 66, ../scss/_icons.scss */
 .icon-hex-02-outline:before {
   content: "\e605";
 }
 
-/* line 104, ../scss/_fonts-icons-dist.scss */
+/* line 69, ../scss/_icons.scss */
 .icon-hex-02-solid:before {
   content: "\e606";
 }
 
-/* line 107, ../scss/_fonts-icons-dist.scss */
+/* line 72, ../scss/_icons.scss */
 .icon-hex-03-outline:before {
   content: "\e607";
 }
 
-/* line 110, ../scss/_fonts-icons-dist.scss */
+/* line 75, ../scss/_icons.scss */
 .icon-hex-03-solid:before {
   content: "\e608";
 }
 
-/* line 113, ../scss/_fonts-icons-dist.scss */
+/* line 78, ../scss/_icons.scss */
 .icon-hex-04-outline:before {
   content: "\e609";
 }
 
-/* line 116, ../scss/_fonts-icons-dist.scss */
+/* line 81, ../scss/_icons.scss */
 .icon-hex-04-solid:before {
   content: "\e60a";
 }
 
-/* line 119, ../scss/_fonts-icons-dist.scss */
+/* line 84, ../scss/_icons.scss */
 .icon-hex-05-outline:before {
   content: "\e60b";
 }
 
-/* line 122, ../scss/_fonts-icons-dist.scss */
+/* line 87, ../scss/_icons.scss */
 .icon-hex-05-solid:before {
   content: "\e60c";
 }
 
-/* line 125, ../scss/_fonts-icons-dist.scss */
+/* line 90, ../scss/_icons.scss */
 .icon-hex-06-outline:before {
   content: "\e60d";
 }
 
-/* line 128, ../scss/_fonts-icons-dist.scss */
+/* line 93, ../scss/_icons.scss */
 .icon-hex-06-solid:before {
   content: "\e60e";
 }
 
-/* line 131, ../scss/_fonts-icons-dist.scss */
+/* line 96, ../scss/_icons.scss */
 .icon-hex-07-outline:before {
   content: "\e60f";
 }
 
-/* line 134, ../scss/_fonts-icons-dist.scss */
+/* line 99, ../scss/_icons.scss */
 .icon-hex-07-solid:before {
   content: "\e610";
 }
 
-/* line 137, ../scss/_fonts-icons-dist.scss */
+/* line 102, ../scss/_icons.scss */
 .icon-hex-08-outline:before {
   content: "\e611";
 }
 
-/* line 140, ../scss/_fonts-icons-dist.scss */
+/* line 105, ../scss/_icons.scss */
 .icon-hex-08-solid:before {
   content: "\e612";
 }
 
-/* line 143, ../scss/_fonts-icons-dist.scss */
+/* line 108, ../scss/_icons.scss */
 .icon-hex-09-outline:before {
   content: "\e613";
 }
 
-/* line 146, ../scss/_fonts-icons-dist.scss */
+/* line 111, ../scss/_icons.scss */
 .icon-hex-09-solid:before {
   content: "\e614";
 }
 
-/* line 149, ../scss/_fonts-icons-dist.scss */
+/* line 114, ../scss/_icons.scss */
 .icon-hex-123-outline:before {
   content: "\e615";
 }
 
-/* line 152, ../scss/_fonts-icons-dist.scss */
+/* line 117, ../scss/_icons.scss */
 .icon-hex-123-solid:before {
   content: "\e616";
 }
 
-/* line 155, ../scss/_fonts-icons-dist.scss */
+/* line 120, ../scss/_icons.scss */
 .icon-hex-about-outline:before {
   content: "\e617";
 }
 
-/* line 158, ../scss/_fonts-icons-dist.scss */
+/* line 123, ../scss/_icons.scss */
 .icon-hex-about-solid:before {
   content: "\e618";
 }
 
-/* line 161, ../scss/_fonts-icons-dist.scss */
+/* line 126, ../scss/_icons.scss */
 .icon-hex-clinician-outline:before {
   content: "\e619";
 }
 
-/* line 164, ../scss/_fonts-icons-dist.scss */
+/* line 129, ../scss/_icons.scss */
 .icon-hex-clinician-solid:before {
   content: "\e61a";
 }
 
-/* line 167, ../scss/_fonts-icons-dist.scss */
+/* line 132, ../scss/_icons.scss */
 .icon-hex-clock-outline:before {
   content: "\e61b";
 }
 
-/* line 170, ../scss/_fonts-icons-dist.scss */
+/* line 135, ../scss/_icons.scss */
 .icon-hex-clock-solid:before {
   content: "\e61c";
 }
 
-/* line 173, ../scss/_fonts-icons-dist.scss */
+/* line 138, ../scss/_icons.scss */
 .icon-hex-close-outline:before {
   content: "\e61d";
 }
 
-/* line 176, ../scss/_fonts-icons-dist.scss */
+/* line 141, ../scss/_icons.scss */
 .icon-hex-close-solid:before {
   content: "\e61e";
 }
 
-/* line 179, ../scss/_fonts-icons-dist.scss */
+/* line 144, ../scss/_icons.scss */
 .icon-hex-computer-outline:before {
   content: "\e61f";
 }
 
-/* line 182, ../scss/_fonts-icons-dist.scss */
+/* line 147, ../scss/_icons.scss */
 .icon-hex-computer-solid:before {
   content: "\e620";
 }
 
-/* line 185, ../scss/_fonts-icons-dist.scss */
+/* line 150, ../scss/_icons.scss */
 .icon-hex-conversation-outline:before {
   content: "\e621";
 }
 
-/* line 188, ../scss/_fonts-icons-dist.scss */
+/* line 153, ../scss/_icons.scss */
 .icon-hex-conversation-solid:before {
   content: "\e622";
 }
 
-/* line 191, ../scss/_fonts-icons-dist.scss */
+/* line 156, ../scss/_icons.scss */
 .icon-hex-dataKey-outline:before {
   content: "\e623";
 }
 
-/* line 194, ../scss/_fonts-icons-dist.scss */
+/* line 159, ../scss/_icons.scss */
 .icon-hex-dataKey-solid:before {
   content: "\e624";
 }
 
-/* line 197, ../scss/_fonts-icons-dist.scss */
+/* line 162, ../scss/_icons.scss */
 .icon-hex-dataLock-outline:before {
   content: "\e625";
 }
 
-/* line 200, ../scss/_fonts-icons-dist.scss */
+/* line 165, ../scss/_icons.scss */
 .icon-hex-dataLock-solid:before {
   content: "\e626";
 }
 
-/* line 203, ../scss/_fonts-icons-dist.scss */
+/* line 168, ../scss/_icons.scss */
 .icon-hex-faq-outline:before {
   content: "\e627";
 }
 
-/* line 206, ../scss/_fonts-icons-dist.scss */
+/* line 171, ../scss/_icons.scss */
 .icon-hex-faq-solid:before {
   content: "\e628";
 }
 
-/* line 209, ../scss/_fonts-icons-dist.scss */
+/* line 174, ../scss/_icons.scss */
 .icon-hex-home-outline:before {
   content: "\e629";
 }
 
-/* line 212, ../scss/_fonts-icons-dist.scss */
+/* line 177, ../scss/_icons.scss */
 .icon-hex-home-solid:before {
   content: "\e62a";
 }
 
-/* line 215, ../scss/_fonts-icons-dist.scss */
+/* line 180, ../scss/_icons.scss */
 .icon-hex-learn-outline:before {
   content: "\e62b";
 }
 
-/* line 218, ../scss/_fonts-icons-dist.scss */
+/* line 183, ../scss/_icons.scss */
 .icon-hex-learn-solid:before {
   content: "\e62c";
 }
 
-/* line 221, ../scss/_fonts-icons-dist.scss */
+/* line 186, ../scss/_icons.scss */
 .icon-hex-menu-outline:before {
   content: "\e62d";
 }
 
-/* line 224, ../scss/_fonts-icons-dist.scss */
+/* line 189, ../scss/_icons.scss */
 .icon-hex-menu-solid:before {
   content: "\e62e";
 }
 
-/* line 227, ../scss/_fonts-icons-dist.scss */
+/* line 192, ../scss/_icons.scss */
 .icon-hex-money-outline:before {
   content: "\e62f";
 }
 
-/* line 230, ../scss/_fonts-icons-dist.scss */
+/* line 195, ../scss/_icons.scss */
 .icon-hex-money-solid:before {
   content: "\e630";
 }
 
-/* line 233, ../scss/_fonts-icons-dist.scss */
+/* line 198, ../scss/_icons.scss */
 .icon-hex-mute-outline:before {
   content: "\e631";
 }
 
-/* line 236, ../scss/_fonts-icons-dist.scss */
+/* line 201, ../scss/_icons.scss */
 .icon-hex-mute-solid:before {
   content: "\e632";
 }
 
-/* line 239, ../scss/_fonts-icons-dist.scss */
+/* line 204, ../scss/_icons.scss */
 .icon-hex-news-outline:before {
   content: "\e633";
 }
 
-/* line 242, ../scss/_fonts-icons-dist.scss */
+/* line 207, ../scss/_icons.scss */
 .icon-hex-news-solid:before {
   content: "\e634";
 }
 
-/* line 245, ../scss/_fonts-icons-dist.scss */
+/* line 210, ../scss/_icons.scss */
 .icon-hex-note-outline:before {
   content: "\e635";
 }
 
-/* line 248, ../scss/_fonts-icons-dist.scss */
+/* line 213, ../scss/_icons.scss */
 .icon-hex-note-solid:before {
   content: "\e636";
 }
 
-/* line 251, ../scss/_fonts-icons-dist.scss */
+/* line 216, ../scss/_icons.scss */
 .icon-hex-paid-outline:before {
   content: "\e637";
 }
 
-/* line 254, ../scss/_fonts-icons-dist.scss */
+/* line 219, ../scss/_icons.scss */
 .icon-hex-paid-solid:before {
   content: "\e638";
 }
 
-/* line 257, ../scss/_fonts-icons-dist.scss */
+/* line 222, ../scss/_icons.scss */
 .icon-hex-phone-outline:before {
   content: "\e639";
 }
 
-/* line 260, ../scss/_fonts-icons-dist.scss */
+/* line 225, ../scss/_icons.scss */
 .icon-hex-phone-solid:before {
   content: "\e63a";
 }
 
-/* line 263, ../scss/_fonts-icons-dist.scss */
+/* line 228, ../scss/_icons.scss */
 .icon-hex-received-outline-:before {
   content: "\e63b";
 }
 
-/* line 266, ../scss/_fonts-icons-dist.scss */
+/* line 231, ../scss/_icons.scss */
 .icon-hex-received-solid-:before {
   content: "\e63c";
 }
 
-/* line 269, ../scss/_fonts-icons-dist.scss */
+/* line 234, ../scss/_icons.scss */
 .icon-hex-reload-outline-:before {
   content: "\e63d";
 }
 
-/* line 272, ../scss/_fonts-icons-dist.scss */
+/* line 237, ../scss/_icons.scss */
 .icon-hex-reload-solid-:before {
   content: "\e63e";
 }
 
-/* line 275, ../scss/_fonts-icons-dist.scss */
+/* line 240, ../scss/_icons.scss */
 .icon-hex-report-outline:before {
   content: "\e63f";
 }
 
-/* line 278, ../scss/_fonts-icons-dist.scss */
+/* line 243, ../scss/_icons.scss */
 .icon-hex-report-solid:before {
   content: "\e640";
 }
 
-/* line 281, ../scss/_fonts-icons-dist.scss */
+/* line 246, ../scss/_icons.scss */
 .icon-hex-reportReceived-outline:before {
   content: "\e641";
 }
 
-/* line 284, ../scss/_fonts-icons-dist.scss */
+/* line 249, ../scss/_icons.scss */
 .icon-hex-reportReceived-solid:before {
   content: "\e642";
 }
 
-/* line 287, ../scss/_fonts-icons-dist.scss */
+/* line 252, ../scss/_icons.scss */
 .icon-hex-sampleReceived-outline:before {
   content: "\e643";
 }
 
-/* line 290, ../scss/_fonts-icons-dist.scss */
+/* line 255, ../scss/_icons.scss */
 .icon-hex-sampleReceived-solid:before {
   content: "\e644";
 }
 
-/* line 293, ../scss/_fonts-icons-dist.scss */
+/* line 258, ../scss/_icons.scss */
 .icon-hex-search-outline:before {
   content: "\e645";
 }
 
-/* line 296, ../scss/_fonts-icons-dist.scss */
+/* line 261, ../scss/_icons.scss */
 .icon-hex-search-solid:before {
   content: "\e646";
 }
 
-/* line 299, ../scss/_fonts-icons-dist.scss */
+/* line 264, ../scss/_icons.scss */
 .icon-hex-settings-outline:before {
   content: "\e647";
 }
 
-/* line 302, ../scss/_fonts-icons-dist.scss */
+/* line 267, ../scss/_icons.scss */
 .icon-hex-settings-solid:before {
   content: "\e648";
 }
 
-/* line 305, ../scss/_fonts-icons-dist.scss */
+/* line 270, ../scss/_icons.scss */
 .icon-hex-skip-outline:before {
   content: "\e649";
 }
 
-/* line 308, ../scss/_fonts-icons-dist.scss */
+/* line 273, ../scss/_icons.scss */
 .icon-hex-skip-solid:before {
   content: "\e64a";
 }
 
-/* line 311, ../scss/_fonts-icons-dist.scss */
+/* line 276, ../scss/_icons.scss */
 .icon-hex-test-outline:before {
   content: "\e64b";
 }
 
-/* line 314, ../scss/_fonts-icons-dist.scss */
+/* line 279, ../scss/_icons.scss */
 .icon-hex-test-solid:before {
   content: "\e64c";
 }
 
-/* line 317, ../scss/_fonts-icons-dist.scss */
+/* line 282, ../scss/_icons.scss */
 .icon-hex-testReceived-outline:before {
   content: "\e64d";
 }
 
-/* line 320, ../scss/_fonts-icons-dist.scss */
+/* line 285, ../scss/_icons.scss */
 .icon-hex-testReceived-solid:before {
   content: "\e64e";
 }
 
-/* line 323, ../scss/_fonts-icons-dist.scss */
+/* line 288, ../scss/_icons.scss */
 .icon-hex-testTube-outline:before {
   content: "\e64f";
 }
 
-/* line 326, ../scss/_fonts-icons-dist.scss */
+/* line 291, ../scss/_icons.scss */
 .icon-hex-testTube-solid:before {
   content: "\e650";
 }
 
-/* line 329, ../scss/_fonts-icons-dist.scss */
+/* line 294, ../scss/_icons.scss */
 .icon-hex-trophy-outline:before {
   content: "\e651";
 }
 
-/* line 332, ../scss/_fonts-icons-dist.scss */
+/* line 297, ../scss/_icons.scss */
 .icon-hex-trophy-solid:before {
   content: "\e652";
 }
 
-/* line 335, ../scss/_fonts-icons-dist.scss */
+/* line 300, ../scss/_icons.scss */
 .icon-hex-truck-outline:before {
   content: "\e653";
 }
 
-/* line 338, ../scss/_fonts-icons-dist.scss */
+/* line 303, ../scss/_icons.scss */
 .icon-hex-truck-solid:before {
   content: "\e654";
 }
 
-/* line 341, ../scss/_fonts-icons-dist.scss */
+/* line 306, ../scss/_icons.scss */
 .icon-hex-truck2-outline:before {
   content: "\e655";
 }
 
-/* line 344, ../scss/_fonts-icons-dist.scss */
+/* line 309, ../scss/_icons.scss */
 .icon-hex-truck2-solid:before {
   content: "\e656";
 }
 
-/* line 347, ../scss/_fonts-icons-dist.scss */
+/* line 312, ../scss/_icons.scss */
 .icon-hex-user-outline:before {
   content: "\e657";
 }
 
-/* line 350, ../scss/_fonts-icons-dist.scss */
+/* line 315, ../scss/_icons.scss */
 .icon-hex-user-solid:before {
   content: "\e658";
 }
 
-/* line 353, ../scss/_fonts-icons-dist.scss */
+/* line 318, ../scss/_icons.scss */
 .icon-hex-volume-outline:before {
   content: "\e659";
 }
 
-/* line 356, ../scss/_fonts-icons-dist.scss */
+/* line 321, ../scss/_icons.scss */
 .icon-hex-volume-solid:before {
   content: "\e65a";
 }
 
-/* line 359, ../scss/_fonts-icons-dist.scss */
+/* line 324, ../scss/_icons.scss */
 .icon-hex-waiting-outline:before {
   content: "\e65b";
 }
 
-/* line 362, ../scss/_fonts-icons-dist.scss */
+/* line 327, ../scss/_icons.scss */
 .icon-hex-waiting-solid:before {
   content: "\e65f";
 }
 
-/* line 365, ../scss/_fonts-icons-dist.scss */
+/* line 330, ../scss/_icons.scss */
 .icon-LifeLetters-logo:before {
   content: "\e661";
 }
 
-/* line 368, ../scss/_fonts-icons-dist.scss */
+/* line 333, ../scss/_icons.scss */
 .icon-home:before {
   content: "\e65c";
 }
 
-/* line 371, ../scss/_fonts-icons-dist.scss */
+/* line 336, ../scss/_icons.scss */
 .icon-stopwatch:before {
   content: "\e65d";
 }
 
-/* line 374, ../scss/_fonts-icons-dist.scss */
+/* line 339, ../scss/_icons.scss */
 .icon-bubbles:before {
   content: "\e65e";
 }
 
-/* line 377, ../scss/_fonts-icons-dist.scss */
+/* line 342, ../scss/_icons.scss */
 .icon-lock:before {
   content: "\e664";
 }
 
-/* line 380, ../scss/_fonts-icons-dist.scss */
+/* line 345, ../scss/_icons.scss */
 .icon-warning:before {
   content: "\e668";
 }
 
-/* line 383, ../scss/_fonts-icons-dist.scss */
+/* line 348, ../scss/_icons.scss */
 .icon-close:before {
   content: "\e669";
 }
 
-/* line 386, ../scss/_fonts-icons-dist.scss */
+/* line 351, ../scss/_icons.scss */
 .icon-checkmark:before {
   content: "\e66a";
 }
 
-/* line 389, ../scss/_fonts-icons-dist.scss */
+/* line 354, ../scss/_icons.scss */
 .icon-googleplus-solid:before {
   content: "\e66b";
 }
 
-/* line 392, ../scss/_fonts-icons-dist.scss */
+/* line 357, ../scss/_icons.scss */
 .icon-facebook:before {
   content: "\e66c";
 }
 
-/* line 395, ../scss/_fonts-icons-dist.scss */
+/* line 360, ../scss/_icons.scss */
 .icon-facebook-solid:before {
   content: "\e66d";
 }
 
-/* line 398, ../scss/_fonts-icons-dist.scss */
+/* line 363, ../scss/_icons.scss */
 .icon-twitter:before {
   content: "\e660";
 }
 
-/* line 401, ../scss/_fonts-icons-dist.scss */
+/* line 366, ../scss/_icons.scss */
 .icon-twitter-solid:before {
   content: "\e66e";
 }
 
-/* line 404, ../scss/_fonts-icons-dist.scss */
+/* line 369, ../scss/_icons.scss */
 .icon-youtube-solid:before {
   content: "\e66f";
 }
 
-/* line 407, ../scss/_fonts-icons-dist.scss */
+/* line 372, ../scss/_icons.scss */
 .icon-github-solid:before {
   content: "\e670";
 }
 
-/* line 410, ../scss/_fonts-icons-dist.scss */
+/* line 375, ../scss/_icons.scss */
 .icon-linkedin-solid:before {
   content: "\e671";
 }
 
+/* fonts - overide for CSS Dist */
+@font-face {
+  font-family: 'serifabt';
+  src: url("fonts/serifabt.eot");
+  src: url("fonts/serifabt.eot?#iefix") format("embedded-opentype"), url("fonts/serifabt.woff") format("woff"), url("fonts/serifabt.ttf") format("truetype"), url("fonts/serifabt.svg#serifabt") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* icons - overide for CSS Dist */
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?-nslsii");
+  src: url("fonts/icomoon.eot?#iefix-nslsii") format("embedded-opentype"), url("fonts/icomoon.woff2?-nslsii") format("woff2"), url("fonts/icomoon.ttf?-nslsii") format("truetype"), url("fonts/icomoon.woff?-nslsii") format("woff"), url("fonts/icomoon.svg?-nslsii#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /**
  * Override core HTML.
  */
