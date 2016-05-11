@@ -4,22 +4,26 @@ module.exports = function(grunt) {
 
   var pkgConfig = grunt.file.readJSON('package.json');
 
+  require('jit-grunt')(grunt);
+
   // Project configuration.
   grunt.initConfig({
     'pkg': pkgConfig,
 
     watch: {
-      compass: {
+      sass: {
         files: ['scss/*.{scss,sass}'],
-        tasks: ['compass:dev']
+        tasks: ['sass:dev']
       }
     },
-    compass: {
+    sass: {
+      options: {
+        outputStyle: 'nested',
+        includePaths: ['./bower_components'],
+      },
       dev: {
-        options: {
-          sassDir: ['scss'],
-          cssDir: ['styles'],
-          importPath: './bower_components',
+        files: {
+          'styles/demo.css': 'scss/demo.scss'
         }
       }
     },
@@ -46,16 +50,13 @@ module.exports = function(grunt) {
     },
   });
 
-  // Load the plugin
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-
   // Default task(s).
   grunt.registerTask('default', [
-  		'compass:dev',
+  		'sass:dev',
   		'watch']);
 
-  grunt.registerTask('dist', ['compass:dev', 'clean', 'copy']);
+  grunt.registerTask('dist', [
+      'sass:dev', 
+      'clean', 
+      'copy']);
 };
