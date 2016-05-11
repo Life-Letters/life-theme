@@ -25,6 +25,11 @@ module.exports = function(grunt) {
         files: {
           'styles/demo.css': 'scss/demo.scss'
         }
+      },
+      dist: {
+        files: {
+          'styles/theme.css': 'scss/theme.scss'
+        }
       }
     },
     clean: {
@@ -43,8 +48,18 @@ module.exports = function(grunt) {
     copy: {
       dist: {
         files: [
-          {expand: true, src: ['fonts/**'], dest: '<%= pkg.dist %>'},
-          {expand: true, flatten:true, src: ['styles/theme.css'], dest: '<%= pkg.dist %>'}
+          {
+            expand: true, 
+            src: ['fonts/**'], 
+            dest: '<%= pkg.dist %>'
+          },{
+            expand: true, 
+            flatten: true, 
+            src: [
+              'styles/theme.css'
+            ], 
+            dest: '<%= pkg.dist %>'
+          }
         ]
       }
     },
@@ -55,8 +70,11 @@ module.exports = function(grunt) {
   		'sass:dev',
   		'watch']);
 
+  grunt.registerTask('heroku', [
+      'sass:dev']);
+
   grunt.registerTask('dist', [
-      'sass:dev', 
+      'sass:dist', 
       'clean', 
       'copy']);
 };

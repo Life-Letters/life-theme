@@ -21,5 +21,8 @@
     "fonts"
   ],
   "main": "dist/theme.css",
-  "style": "dist/theme.css"
+  "style": "dist/theme.css",
+  "scripts": {
+    "postinstall": "bower install && grunt heroku"
+  }
 }
