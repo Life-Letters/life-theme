@@ -9,6 +9,68 @@
 
     <div class="container-fluid">
       <div class="page-header">
+        <h1>Colours</h1>
+      </div>
+      <div class="colors">
+        <div class="color brand-primary" inspect-html></div>
+        <div class="color brand-success" inspect-html></div>
+        <div class="color brand-info" inspect-html></div>
+        <div class="color brand-warning" inspect-html></div>
+        <div class="color brand-danger" inspect-html></div>
+        <br>
+        <div class="color tinyLetters" inspect-html></div>
+        <div class="color tinyLetters-light" inspect-html></div>
+        <div class="color tinyLetters-dark" inspect-html></div>
+        <br>
+        <div class="color pink" inspect-html></div>
+        <div class="color pinkLighter" inspect-html></div>
+        <div class="color pinkDarker" inspect-html></div>
+        <div class="color pinkFaint" inspect-html></div>
+        <br>
+        <div class="color yellow" inspect-html></div>
+        <div class="color yellowLighter" inspect-html></div>
+        <div class="color yellowDarker" inspect-html></div>
+        <div class="color yellowFaint" inspect-html></div>
+        <br>
+        <div class="color cyan" inspect-html></div>
+        <div class="color cyanLighter" inspect-html></div>
+        <div class="color cyanDarker" inspect-html></div>
+        <div class="color cyanFaint" inspect-html></div>
+        <br>
+        <div class="color gray" inspect-html></div>
+        <div class="color grayLighter" inspect-html></div>
+        <div class="color grayDarker" inspect-html></div>
+        <div class="color grayFaint" inspect-html></div>
+        <br>
+        <div class="color purple" inspect-html></div>
+        <div class="color purpleLighter" inspect-html></div>
+        <div class="color purpleDarker" inspect-html></div>
+        <div class="color purpleFaint" inspect-html></div>
+        <br>
+        <div class="color bluegray" inspect-html></div>
+        <div class="color bluegrayLighter" inspect-html></div>
+        <div class="color bluegrayDarker" inspect-html></div>
+        <div class="color bluegrayFaint" inspect-html></div>
+        <br>
+        <div class="color tangerine" inspect-html></div>
+        <div class="color tangerineLighter" inspect-html></div>
+        <div class="color tangerineDarker" inspect-html></div>
+        <div class="color tangerineFaint" inspect-html></div>
+        <br>
+        <div class="color green" inspect-html></div>
+        <div class="color greenLighter" inspect-html></div>
+        <div class="color greenDarker" inspect-html></div>
+        <div class="color greenFaint" inspect-html></div>
+        <br>
+        <div class="color maroon" inspect-html></div>
+        <div class="color maroonLighter" inspect-html></div>
+        <div class="color maroonDarker" inspect-html></div>
+        <div class="color maroonFaint" inspect-html></div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="page-header">
         <h1>Icons</h1>
       </div>
       <div class="row">
@@ -1309,7 +1371,7 @@
       </section>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/ng-lodash/build/ng-lodash.js"></script>
     <script src="bower_components/js-beautify/js/lib/beautify-html.js"></script>
@@ -1338,6 +1400,24 @@
               'scriptLetters-alt',
               'scriptLetters-alt2',
             ];
+        })
+        .directive('color', function() {
+          // Taken from: http://jsfiddle.net/mushigh/myoskaos/
+          function rgb2hex(rgb){
+           rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+           return (rgb && rgb.length === 4) ? "#" +
+            ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+            ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+            ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
+          }
+          return {
+            restrict: 'C',
+            link: function(scope, element, attrs) {
+              var color = element.css('background-color'),
+                  name = element.attr('class').replace(/color /, '');
+              element.html('$'+name+'<br>'+color+'<br>'+rgb2hex(color));
+            },
+          };
         });
     </script>
   </body>

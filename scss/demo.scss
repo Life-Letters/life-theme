@@ -9,3 +9,58 @@ $theme-font-path: "/fonts/";
 	display: inline-block;
 	margin: 0.2em 0;
 }
+
+.color {
+	width: 150px;
+	height: 70px;
+	font-size: 10px;
+	display: inline-block;
+	margin: 0 5px 5px 0;
+	padding: 5px;
+
+	&.tinyLetters				{ background-color: $tinyLetters; }
+	&.tinyLetters-light	{ background-color: $tinyLetters-light; }
+	&.tinyLetters-dark	{ background-color: $tinyLetters-dark; }
+	&.pink							{ background-color: $pink; }
+	&.pinkLighter				{ background-color: $pinkLighter; }
+	&.pinkDarker				{ background-color: $pinkDarker; }
+	&.pinkFaint					{ background-color: $pinkFaint; }
+	&.yellow						{ background-color: $yellow; }
+	&.yellowLighter			{ background-color: $yellowLighter; }
+	&.yellowDarker			{ background-color: $yellowDarker; }
+	&.yellowFaint				{ background-color: $yellowFaint; }
+	&.cyan							{ background-color: $cyan; }
+	&.cyanLighter				{ background-color: $cyanLighter; }
+	&.cyanDarker				{ background-color: $cyanDarker; }
+	&.cyanFaint					{ background-color: $cyanFaint; }
+	&.gray							{ background-color: $gray; }
+	&.grayLighter				{ background-color: $grayLighter; }
+	&.grayDarker				{ background-color: $grayDarker; }
+	&.grayFaint					{ background-color: $grayFaint; }
+	&.purple						{ background-color: $purple; }
+	&.purpleLighter			{ background-color: $purpleLighter; }
+	&.purpleDarker			{ background-color: $purpleDarker; }
+	&.purpleFaint				{ background-color: $purpleFaint; }
+	&.bluegray					{ background-color: $bluegray; }
+	&.bluegrayLighter		{ background-color: $bluegrayLighter; }
+	&.bluegrayDarker		{ background-color: $bluegrayDarker; }
+	&.bluegrayFaint			{ background-color: $bluegrayFaint; }
+	&.tangerine					{ background-color: $tangerine; }
+	&.tangerineLighter	{ background-color: $tangerineLighter; }
+	&.tangerineDarker		{ background-color: $tangerineDarker; }
+	&.tangerineFaint		{ background-color: $tangerineFaint; }
+	&.green							{ background-color: $green; }
+	&.greenLighter			{ background-color: $greenLighter; }
+	&.greenDarker				{ background-color: $greenDarker; }
+	&.greenFaint				{ background-color: $greenFaint; }
+	&.maroon						{ background-color: $maroon; }
+	&.maroonLighter			{ background-color: $maroonLighter; }
+	&.maroonDarker			{ background-color: $maroonDarker; }
+	&.maroonFaint				{ background-color: $maroonFaint; }
+
+	&.brand-primary			{ background-color: $brand-primary; }
+	&.brand-success			{ background-color: $brand-success; }
+	&.brand-info				{ background-color: $brand-info; }
+	&.brand-warning			{ background-color: $brand-warning; }
+	&.brand-danger			{ background-color: $brand-danger; }
+}
