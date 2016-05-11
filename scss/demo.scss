@@ -2,3 +2,10 @@ $theme-font-path: "/fonts/";
 
 @import "include";
 @import "angular-inspect-html/scss/angular-inspect-html.scss";
+
+.icon {
+	font-size: 30pt;
+	width: 34pt;
+	display: inline-block;
+	margin: 0.2em 0;
+}
