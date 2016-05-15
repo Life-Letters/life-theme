@@ -18,22 +18,21 @@ This is the official Life Letters front-end theme including:
 
 ### To manually install, add `_include.scss` to your sass file.
 
-If you are using a Grunt build, add the following to the copy
+If you are using a Grunt build, add the following to the `copy`
 task to handle the font files:
 
     {
       expand: true,
       cwd: '.',
-      src: 'bower_components/theme/fonts/*',
+      src: 'bower_components/life-theme/fonts/*',
       dest: '<%= yeoman.dist %>'
     }
 
 
-You can also alter where the fonts are stored using the following
+You can alter where the fonts are stored using the following
 SASS variables:
 
-    $theme-font-path: "/foobar/";
-    $icon-font-path: "/foobar/";
+    $theme-font-path: "/bower_components/life-theme/fonts/";
 
 
 When using Compass in your grunt script, make sure `bower_components`
@@ -62,6 +61,7 @@ following:
     },
 
 ### To install the CSS/Fonts dist via npm
+
 At times you might not want the complete SASS project in your app project (in the case where the latency it adds to your live reload is not acceptable) and you just need a compiled CSS file and Fonts package that you include as the default live letters bootstrap which you can then build upon locally in your app.
 
 You can get the dist CSS and fonts (essentially the dist folder) into your nodeJS app like so:
