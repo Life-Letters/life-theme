@@ -46,8 +46,7 @@ is included via the `importPath`:
 
 If you are using `wiredep` in your Grunt file, you should exclude your bootstrap sass files as
 these are already imported via the module (they're imported in a specific order, so it's
-easier to leave it to web-common). To exclude them, add the
-following:
+easier to leave it to web-common). To exclude them, add the following:
 
     wiredep: {
       ...
@@ -55,7 +54,6 @@ following:
         ...
         exclude: [
           'bootstrap-sass',
-          'font-awesome'
         ],
       }
     },
