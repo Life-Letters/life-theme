@@ -1,11 +1,14 @@
 // Needed before the bootswatch import. This gets imported again, but that's fine
-@import "bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 @import "variables";
-@import "bootswatch/cosmo/variables";
+@import "~bootswatch/cosmo/variables";
 
-@import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "bootswatch/cosmo/bootswatch";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "~bootswatch/cosmo/bootswatch";
 
 @import "fonts";
 @import "defaults";
